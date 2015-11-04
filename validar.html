@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="css/site-demos.css"/>
+</head>
+
+<body>
+<form name="jsform2" action="enviarformulario2.php" method="post" enctype="multipart/form-data" id="hola2">
+<label id="email-error" class="error" for="clabe">Clabe</label>
+<input name="clabe" id="textfield16"  style="width:253px; height:23px;" maxlength="18" value=""/>
+
+<input name="submit" type="submit" class="botones" value="CONTINUAR &gt;"/>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
+<script>
+
+function redirect(responseText, statusText, xhr, $form)  {
+	if (statusText == 'success') {
+		if(responseText == 'success') {
+			location.href = "https://www.prestaclic.com.mx/verificaDatos.php"
+		} else {
+			alert(responseText);
+		}
+	}
+}
+// just for the demos, avoids form submit
+jQuery.validator.setDefaults({
+	debug: false,
+	success: "valid"
+});
+
+
+$( "#hola2" ).validate({
+	rules: 
+	{
+		clabe: 
+			{
+				required:  true,
+				number: true,
+				minlength: 18
+			},
+		dirtelefonocasa: 
+			{
+				required:  true,
+				number: true,
+				minlength: 10
+			},
+		dirtelefonocelular:
+		{
+				required:  true,
+				number: true,
+				minlength: 18
+		},
+	},
+	messages: 
+	{
+        clabe: 
+		{
+                required: "aaaaa.",
+				number: "jhvl.",
+				minlength: jQuery.validator.format("eeeeeee {0} digitos."),				
+		},
+		dirtelefonocasa: 
+		{ 
+				required: "Teléfono requerido.",
+				number: "Solo datos numericos.",
+				minlength: jQuery.validator.format("Su número debe contener por lo menos {0} digitos."),
+		},
+		dirtelefonocelular:
+		{ 
+				required: "Teléfono requerido.",
+				number: "Solo datos numericos.",
+				minlength: jQuery.validator.format("Su número debe contener por lo menos {0} digitos."),
+		},
+    }
+	
+});
+</script>
+</body>
+</html>

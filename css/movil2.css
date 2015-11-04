@@ -1,0 +1,147 @@
+#abilities > div,
+#contactme > div
+{
+	background-color:#F39; 
+	
+}
+
+
+
+#aboutme2{
+	background-color:#6FF;
+	padding:0 15px;
+}
+
+
+#container-aboutme2 > div:nth-of-type(3){
+	text-align:center;
+	margin-top:40px;
+}
+
+#container-aboutme2 > div:nth-of-type(3) > img{
+	width:49%;
+	height:auto;
+	margin:0;
+	margin-top:4px;
+}
+
+
+
+/*#container-aboutme2 > div:nth-of-type(3) > img:nth-of-type(1),
+#container-aboutme2 > div:nth-of-type(3) > img:nth-of-type(3),
+#container-aboutme2 > div:nth-of-type(3) > img:nth-of-type(5),
+#container-aboutme2 > div:nth-of-type(3) > img:nth-of-type(7){
+	display:block;
+	width:48%;
+	margin:2px;
+	float:left;
+}
+
+
+#container-aboutme2 > div:nth-of-type(3) > img:nth-of-type(2),
+#container-aboutme2 > div:nth-of-type(3) > img:nth-of-type(4),
+#container-aboutme2 > div:nth-of-type(3) > img:nth-of-type(6),
+#container-aboutme2 > div:nth-of-type(3) > img:nth-of-type(8){
+	display:block;
+	width:48%;
+	margin:2px;
+	float:right;
+}*/
+
+#experience > div > div:nth-of-type(3){
+	margin-top:80px;
+}
+
+#technologies > div:nth-of-type(1),
+#technologies > div:nth-of-type(4),
+#technologies > div:nth-of-type(2),
+#technologies > div:nth-of-type(5),
+#technologies h2{
+	width:100%;
+	padding:0 15px;
+	box-sizing: border-box;
+}
+
+
+#container-projects .project{
+	width:45%;
+	height:180px;
+}
+
+#container-projects .caption-text{
+	margin-top:-60px;
+}
+
+
+.caption-button {
+    height: 40px;
+    width: 116px;
+	padding-top:8px;
+	border: 2px solid #FFF; 
+}
+
+#container-projects .caption-text h1{
+	font-size:14px;
+}
+
+#container-projects .caption-text p{
+	font-size: 23px;
+	margin:0 12px;
+}
+
+#container-projects .caption-button{
+	margin-top:0;
+}
+
+
+/*#container-projects{
+	background-color:#999;
+}*/
+
+
+#container-projects > spam{
+	width:  45%;
+    margin: 5px;
+    height: 150px;	
+}
+
+
+/*Contact me*/
+#contact-form > div:nth-of-type(1){
+	width:100%;
+	float:none;
+}
+
+#contact-form > div:nth-of-type(2){
+	width:100%;
+	float:none;
+}
+
+#contactme-container > #form-container{
+	height:685px;
+	
+}
+
+#form-container > #contact-form > p{
+	font-size:large;
+}
+
+#contactme-container > #map-container{
+	margin-top:15px;
+}
+
+input[type='text']{
+	margin-bottom:15px;
+}
+#contact-form > div:nth-of-type(1) > p,
+#contact-form > div:nth-of-type(2) > p{
+	margin-top:-10px;
+}
+
+input[type=submit]:not(:active){
+	width:100%;
+}
+
+input[type=submit]:active{
+	width:100%;
+}
